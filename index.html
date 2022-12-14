@@ -13,11 +13,6 @@
     <nav>
         <div class="nav-left">
             <a href="https://cailleach666.github.io/aid_it/"><img src="realogo.png" class="logo"></a>
-            <ul>
-                <li><img src="belly.png" width="20" height="15"></li>
-                <li><img src="envelope.png" width="20" height="15"></li>
-                <li><img src="play.png" width="20" height="15"></li>
-            </ul>
         </div>
         <div class="nav-right">
 
@@ -106,17 +101,17 @@
                 <button type="button" class="the_button">Edit profile</button>
                 <button type="button" class="the_button">Friends</button>
                 <br>
-            <div class="dropdown">
-                <button id="drop" class="dropbtn"></button>
-                    <div id="myDropdown" class="dropdown-content">
-
-                        <a href="#">Notifications</a>
-                        <hr class="solid">
-                        <a href="#">Share profile</a>
-                        <hr class="solid">
-                        <a href="#">Log out</a>
+                <div class="dropdown">
+                    <button id="drop" class="dropbtn" onclick="myFunction()"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <input onclick="func()" id="accountDetails" type="button" value="Notifications On"></input>
+                            <hr class="solid">
+                            <a href="#">Share profile</a>
+                            <hr class="solid">
+                            <a href="#">Log out</a>
+                        </div>
+    
                     </div>
-                </div>
             </div>
             </div>
         <div class="profile-info">
@@ -125,11 +120,32 @@
                     <h3>Intro</h3>
                     <p class="intro-text">Believe in yourself and you can do unbelieavable.</p>
                     <hr>
+                    <button class="button open-button">Choose your university:</button>
+                    <dialog class ="modal" id="modal">
+                        <ul>
+                            <li><button type="button">Taltech</button></li>
+                            <li><button type="button">Tallinna ülikool</button></li>
+                            <li><button type="button">Tartu ülikool</button></li>
+                        </ul>
+                        <button class="close-button">Ok</button>
+                    </dialog>
                     <ul>
                         <li> <img src="university.png"> Taltech</li>
+                    </ul>
+                    <button class="button open-button2">Choose your specialty:</button>
+                    <dialog class ="modal2" id="modal2">
+                        <ul>
+                            <li><button type="button">Informaatika</button></li>
+                            <li><button type="button">Küberturvalisus</button></li>
+                            <li><button type="button">IT-süsteemide arendus</button></li>
+                        </ul>
+                        <button class="close-button2">Ok</button>
+                    </dialog>
+                    <ul>
                         <li><img src="subject.png"> Informaatika</li>
                     </ul>
                 </div>
+
             </div>
             <div class="links-col">
                 <div class="links-info">
@@ -144,7 +160,6 @@
         </div>
 
     </div>
-
 <div class="footer">
     <p>© Copyright 2022 - Barbie team, made with pain and tutorials from Youtube</p>
 </div>
