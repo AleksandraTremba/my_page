@@ -821,3 +821,6 @@ hr.solid{
     margin-top: 15px;
     margin-bottom: 10px;
 }
+.pd-right a{
+    text-decoration: none;
+}
